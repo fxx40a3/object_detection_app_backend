@@ -29,6 +29,7 @@ jobs:
           ECR_REGISTRY: 946380095723.dkr.ecr.ap-northeast-1.amazonaws.com
           ECR_REPOSITORY: object-detection-backend
           IMAGE_TAG: latest
+          ACTIONS_STEP_DEBUG: true
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG

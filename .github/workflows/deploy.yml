@@ -4,11 +4,11 @@ name: Deploy to AWS ECR
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
